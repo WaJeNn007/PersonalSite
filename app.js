@@ -27,5 +27,8 @@ app.get("/", (req, res) => {
   res.json("this is some json")
 })
 
+app.listen(3000, () => {
+  
+})
 
 module.exports = app;

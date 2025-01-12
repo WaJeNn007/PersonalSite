@@ -21,10 +21,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // catch 404 and forward to error handler
 
-
+let user = {
+  'username': 'Aiden'
+}
 // error handler
 app.get("/", (req, res) => {
-  res.json("this is some json")
+  res.json(user)
 })
 
 app.listen(3000, () => {

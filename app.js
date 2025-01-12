@@ -23,6 +23,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 // error handler
+app.get("/", (req, res) => {
+  res.json("this is some json")
+})
 
 
 module.exports = app;

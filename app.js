@@ -26,7 +26,7 @@ let user = {
 }
 // error handler
 app.get("/", (req, res) => {
-  res.json(user)
+  res.json(user.username)
 })
 
 app.listen(3000, () => {
